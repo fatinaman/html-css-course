@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Box</title>
+    <style>
+        .container{
+            display: flex;        
+            align-items: center;
+            gap: 12px;
+            border-radius: 9px;
+            width: 300px;
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.336);
+            padding: 10px;
+        }
+        img{
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        input{
+            border-style: none;
+        }
+        button{
+            background-color: rgb(10, 126, 194);
+            color: white;
+            padding: 4px 9px;
+            border-style: none;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="../images-textboxes\cool-cat.jpg" alt="profile pic of cool cat">
+        <input type="text" placeholder="What's happening?">
+        <button>Tweet</button>
+    </div>
+</body>
+</html>
