@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friend Cards</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            padding: 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 15px; 
+            max-width: 800px;
+        }
+        
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding-bottom: 12px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .imageContainer img {
+            width: 100%;
+            height: 200px; 
+            object-fit: cover;
+        }
+
+        .card-name {
+            padding: 10px 12px 5px 12px;
+            display: block;
+        }
+       
+        .infoContainer {
+            display: grid;
+            grid-template-columns: 35px 1fr;
+            align-items: center; 
+            column-gap: 8px;
+            padding: 0 12px 12px 12px;
+        }
+
+        .smallDP img {
+            width: 100%;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+        }
+        .infoContainer p {
+            margin: 0;
+            font-weight: normal;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        button {
+            background-color: #2b78e4;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-left: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Card 1 -->
+        <div class="card">
+            <div class="imageContainer">
+                <img src="..\images-textboxes\cool-cat.jpg" alt="Oliver">
+            </div>
+            <span class="card-name">Oliver</span>
+            <div class="infoContainer">
+                <div class="smallDP">
+                    <img src="..\images-textboxes\cool-cat.jpg" alt="">
+                </div>
+                <p>2 mutual friends</p>
+            </div>
+            <button>Add Friend</button>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <div class="imageContainer">
+                <img src="..\images-textboxes\cool-cat.jpg" alt="Mimi">
+            </div>
+            <span class="card-name">Mimi</span>
+            <div class="infoContainer">
+                <div class="smallDP">
+                    <img src="..\images-textboxes\cool-cat.jpg" alt="">
+                </div>
+                <p>3 mutual friends</p>
+            </div>
+            <button>Add Friend</button>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <div class="imageContainer">
+                <img src="..\images-textboxes\cool-cat.jpg" alt="Rex">
+            </div>
+            <span class="card-name">Rex</span>
+            <div class="infoContainer">
+                <div class="smallDP">
+                    <img src="..\images-textboxes\cool-cat.jpg" alt="">
+                </div>
+                <p>4 mutual friends</p>
+            </div>
+            <button>Add Friend</button>
+        </div>
+    </div>
+</body>
+</html>
